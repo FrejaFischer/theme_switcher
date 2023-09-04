@@ -1,0 +1,60 @@
+[data-theme="light"] {
+  --headerColor: rgb(152, 152, 169);
+  --footerColor: rgb(152, 152, 169);
+  --textColor: black;
+  --bgrColor: rgb(250, 238, 238);
+}
+[data-theme="dark"] {
+  --headerColor: black;
+  --footerColor: black;
+  --textColor: white;
+  --bgrColor: black;
+}
+[data-theme="platypus"] {
+  --headerColor: aquamarine;
+  --footerColor: orange;
+  --textColor: black;
+  --bgrColor: aquamarine;
+}
+[data-theme="perry"] {
+  --headerColor: aquamarine;
+  --footerColor: orange;
+  --textColor: black;
+  --bgrColor: aquamarine;
+  border-top: solid rgb(158, 116, 62) 1em;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  color: var(--textColor);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--headerColor);
+  /* Perry the platapus?!*/
+  /* border-top: solid rgb(158, 116, 62) 5em; */
+}
+main {
+  height: 100%;
+  background-color: var(--bgrColor);
+}
+label {
+  font-size: 0.5em;
+}
+
+p {
+  margin: 0.5em;
+}
+footer {
+  align-self: end;
+  background-color: var(--footerColor);
+  height: 5rem;
+  margin: 0;
+  padding: 0.5em;
+}
